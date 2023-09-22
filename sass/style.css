@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-bg {
+  background-color: #000000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0em 1em;
+}
+.header__logo {
+  display: flex;
+}
+.header__item {
+  display: flex;
+  gap: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  padding: 0px 10px;
+  background: radial-gradient(#ff0000 -40%, #000000 73%);
+}
+.header__item-link {
+  text-decoration: none;
+  color: #ffffff;
+  height: 5vh;
+  align-items: center;
+  display: flex;
+}
+.header__item-link:hover {
+  color: #f81616;
+}
+.header__item .link-nav {
+  display: none;
+}
+.header__burger .link-home {
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  padding: 0px 10px;
+  background: radial-gradient(#ff0000 -40%, #000000 73%);
+}
+.header__burger-toggler {
+  display: none;
+}
+.header__burger .burger__item {
+  display: none;
+  padding: 30px 10px;
+  background: linear-gradient(0deg, #f2a6a6 0%, #000000 100%);
+}
+.header__burger .burger__item-link {
+  text-decoration: none;
+  color: #ffffff;
+  height: 3vh;
+  align-items: center;
+  display: flex;
+  padding-inline: inherit;
+}
+
+.hr-gradient {
+  margin: -2px 0;
+  padding: 0;
+  height: 6px;
+  border: none;
+  background: radial-gradient(#ff0000 -40%, #000000 73%);
+}
+
+@media (max-width: 900px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header__item-link {
+    display: none;
+  }
+  .header__burger {
+    margin-top: 0px;
+  }
+  .header__burger-toggler {
+    display: block;
+    font-size: 2em;
+    padding-inline: 0.5em;
+    padding-bottom: 3px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  .header__burger-toggler:hover {
+    color: #f81616;
+  }
+  .header .link-home {
+    display: none;
+  }
+  .header .link-nav {
+    display: block;
+    display: flex;
+    border-radius: 30px;
+  }
+  .header__burger:hover .burger__item {
+    display: block;
+    position: absolute;
+    right: 2px;
+  }
+  .header .burger__item-link:hover {
+    color: red;
+  }
+}
+.container-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3);
+  background-color: aqua;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background: #000000;
+}
+
+.content {
+  height: 500px;
+  border: 3px solid red;
+}/*# sourceMappingURL=style.css.map */
