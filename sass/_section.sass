@@ -1,13 +1,132 @@
-.container-grid
-	background: #ccc // sdfsdf
-	margin: auto // sdfsdfsdf
-	padding: auto // sdfsdf
-	width: 1600px // sdfsdf
-	height: 80vh //dsfsdfsdf
 
 .section-content
-	display: grid
-	grid-template-columns: repeat(3, 1fr)
-	grid-template-rows: repeat(3)
-	background-color: black
-	height: 700px // dsfsdfsdf
+	display: flex
+	.section-content__item
+		position: relative
+		height: 800px
+		width: 100%
+		&-img
+			position: absolute
+		.block-1
+			width: 30%
+			height: 40%
+			right: 825px
+			bottom: 420px
+			border-radius: 15px
+			box-shadow: 0px 5px 10px 0px #6633ee
+			z-index: 2
+			&:hover
+				transform: scale(1.1)
+				transition: all 0.5s ease-out
+				border-radius: 200px
+				box-shadow: 0px 0px 10px 10px #6633ee
+				z-index: 5
+		.block-2
+			width: 32%
+			height: 40%
+			right: 590px
+			bottom: 180px
+			border-radius: 15px
+			box-shadow: 0px 5px 10px 0px #6633ee
+			z-index: 1
+			&:hover
+				transform: scale(1.1)
+				transition: all 0.5s ease-out
+				border-radius: 200px
+				box-shadow: 0px 0px 10px 10px #6633ee
+				z-index: 5
+		.block-3
+			width: 32%
+			height: 40%
+			right: 900px
+			bottom: 110px
+			border-radius: 15px
+			box-shadow: 0px 5px 10px 0px #6633ee
+			&:hover
+				transform: scale(1.1)
+				transition: all 0.5s ease-out
+				border-radius: 200px
+				box-shadow: 0px 0px 10px 10px #6633ee
+				z-index: 5
+	.section-content__card
+		.items
+			display: flex
+			justify-content: center
+			align-items: center
+			padding-top: 150px
+			.card
+				position: relative
+				width: 320px
+				height: 480px
+				background: #6633ee
+				border-radius: 80px
+				overflow: hidden
+				&::before
+					content: ''
+					position: absolute
+					top: -50%
+					width: 100%
+					height: 100%
+					background: black
+					transform: skewY(345deg)
+					transition: 0.5s
+				&:hover::before
+					top: -70%
+					transform: skewY(390deg)
+				&::after
+					content: 'CORSAIR'
+					position: absolute
+					bottom: 0
+					eft: 0
+					font-weight: 600
+					font-size: 6em
+					color: rgba(0, 0, 0, 0.1)
+				.imgBox
+					position: relative
+					width: 100%
+					display: flex
+					justify-content: center
+					align-items: center
+					padding-top: 20px
+					z-index: 1
+				.contentBox
+					position: relative
+					padding: 20px
+					display: flex
+					justify-content: center
+					align-items: center
+					flex-direction: column
+					z-index: 2
+					h3
+						font-size: 18px
+						color: #fff
+						font-weight: 500
+						text-transform: uppercase
+						letter-spacing: 1px
+					.price
+						font-size: 24px
+						color: #fff
+						font-weight: 700
+						letter-spacing: 1px
+					.buy
+						position: relative
+						top: 100px
+						opacity: 0
+						padding: 10px 30px
+						margin-top: 15px
+						color: #000000
+						text-decoration: none
+						background: #ffce00
+						border-radius: 30px
+						text-transform: uppercase
+						letter-spacing: 1px
+						transition: 0.5s
+			.card:hover .contentBox .buy
+				top: 0
+				opacity: 1
+	.mouse
+		height: 300px
+		idth: auto
+//  background: transparent
+
+//  transition: all .3s ease
